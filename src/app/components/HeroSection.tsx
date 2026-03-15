@@ -1,9 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import gsap from 'gsap';
-import rapaNuiLogo from 'figma:asset/4f21ce56bc8447e0b15e74f64a95ca262c3e3b79.png';
 import heroBackground from 'figma:asset/7d38720a420ed43210124dfa9269c105a39ad5c3.png';
-import { ChevronRight, MapPin, Clock, MessageCircle, Bike } from 'lucide-react';
+import { ChevronRight, MessageCircle, Bike } from 'lucide-react';
 
 export function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -58,7 +57,7 @@ export function HeroSection() {
           </div>
 
           <p className="text-lg md:text-xl text-white/90 max-w-md leading-relaxed drop-shadow-lg">
-            A melhor experiência em hambúrgueres artesanais, massas e pastéis. 
+            A melhor experiência em hambúrgueres artesanais, pizzas e pastéis. 
             Ingredientes frescos e sabor incomparável desde 1998.
           </p>
 

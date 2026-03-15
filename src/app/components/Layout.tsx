@@ -30,7 +30,7 @@ export function Layout() {
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <h3 className="text-3xl md:text-4xl font-black mb-4">Rapa Nui</h3>
           <p className="text-lg md:text-xl mb-8 opacity-90">
-            Massaperia Artesanal · Pastelaria
+            Hamburgueria Artesanal · Pastelaria · Pizzaria
           </p>
 
           {/* Social Media Icons - Instagram & Facebook Only */}
