@@ -4,12 +4,13 @@ import { AmbientSection } from '../components/AmbientSection';
 import { AnnouncementBanner } from '../components/AnnouncementBanner';
 import { ReviewsSection } from '../components/ReviewsSection';
 import { PageTransition } from '../components/PageTransition';
-import galleryBurger from 'figma:asset/bfb90da3e8e047e221a82cff43de07f3c5c66a2e.png';
-import galleryPastel from 'figma:asset/4a56b1827a7354bfafa389c7c86162afa469d634.png';
-import galleryBeverage from 'figma:asset/a14e25d72f2753a6e35725b8d531c23b0a3bfab8.png';
-import galleryBurgerPlate from 'figma:asset/49f7a80834c02a10613b597209efd0a82b59c370.png';
-import galleryInterior1 from 'figma:asset/9f51012b0f31fcf402463718fc51527d8a543e45.png';
-import galleryInterior2 from 'figma:asset/9c084d118d96a2e42e16b4aaf4c96d42fc72d980.png';
+
+import galleryBurger from '../../assets/bfb90da3e8e047e221a82cff43de07f3c5c66a2e.png';
+import galleryPastel from '../../assets/4a56b1827a7354bfafa389c7c86162afa469d634.png';
+import galleryBeverage from '../../assets/a14e25d72f2753a6e35725b8d531c23b0a3bfab8.png';
+import galleryBurgerPlate from '../../assets/49f7a80834c02a10613b597209efd0a82b59c370.png';
+import galleryInterior1 from '../../assets/9f51012b0f31fcf402463718fc51527d8a543e45.png';
+import galleryInterior2 from '../../assets/9c084d118d96a2e42e16b4aaf4c96d42fc72d980.png';
 
 export function Home() {
   return (

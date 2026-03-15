@@ -18,7 +18,7 @@ declare module "gsap/ScrollTrigger" {
   export const ScrollTrigger: any;
 }
 
-declare module 'figma:asset/*' {
+declare module '*.png' {
   const src: string;
   export default src;
 }
