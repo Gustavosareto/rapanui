@@ -5,12 +5,12 @@ import { AnnouncementBanner } from '../components/AnnouncementBanner';
 import { ReviewsSection } from '../components/ReviewsSection';
 import { PageTransition } from '../components/PageTransition';
 
-import galleryComida1 from '../assets/comida.webp';
-import galleryComida2 from '../assets/comida2.webp';
-import galleryComida3 from '../assets/comida3.webp';
-import galleryComida4 from '../assets/comida4.webp';
-import galleryComida5 from '../assets/comida5.webp';
-import galleryComida6 from '../assets/comida6.webp';
+import galleryComida1 from '../../assets/comida.webp';
+import galleryComida2 from '../../assets/comida2.webp';
+import galleryComida3 from '../../assets/comida3.webp';
+import galleryComida4 from '../../assets/comida4.webp';
+import galleryComida5 from '../../assets/comida5.webp';
+import galleryComida6 from '../../assets/comida6.webp';
 
 export function Home() {
   return (
