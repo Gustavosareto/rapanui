@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import moaiImage from '../../assets/e43980ec36d15115ffe244fecd2b9817a1d6cf88.png';
+import moaiImage from '../assets/e43980ec36d15115ffe244fecd2b9817a1d6cf88.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,6 +82,7 @@ export function MoaiMascot({
           alt="Moai Mascot - Rapa Nui"
           className="w-full h-full object-contain filter drop-shadow-lg"
           draggable={false}
+          loading="lazy"
         />
       </div>
     </div>

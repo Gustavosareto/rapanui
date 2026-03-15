@@ -30,7 +30,7 @@ export function FloatingWhatsApp() {
   return (
     <a
       ref={buttonRef}
-      href="https://wa.me/5547336622373"
+      href="https://wa.me/5547997078484"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-2xl shadow-black/50 hover:shadow-2xl hover:shadow-[#25D366]/50 hover:scale-110 transition-all duration-300 group"
@@ -43,7 +43,7 @@ export function FloatingWhatsApp() {
       {/* Tooltip */}
       <div className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
         <span className="text-sm font-semibold">Fale Conosco!</span>
-        <div className="text-xs opacity-90">(47) 3366-2373</div>
+        <div className="text-xs opacity-90">(47) 99707-8484</div>
         {/* Arrow */}
         <div className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-gray-900"></div>
       </div>

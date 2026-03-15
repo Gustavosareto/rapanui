@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router';
 import { Navigation } from './Navigation';
 import { FloatingWhatsApp } from './FloatingWhatsApp';
-import footerBackground from '../../assets/final.png';
+import footerBackground from '../assets/final.png';
 
 export function Layout() {
   return (
@@ -75,7 +75,7 @@ export function Layout() {
             <span className="hidden md:inline">•</span>
             <span>⏰ Seg - Dom: 18:00 - 00:00</span>
             <span className="hidden md:inline">•</span>
-            <span>📞 (47) 3366-2373</span>
+            <span>📞 (47) 99707-8484</span>
           </div>
 
           <div className="mt-8 pt-8 border-t border-white/20">

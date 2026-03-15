@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import gsap from 'gsap';
 import { ChevronRight, MessageCircle, Bike } from 'lucide-react';
-import heroBackground from '../../assets/7d38720a420ed43210124dfa9269c105a39ad5c3.png';
+import heroBackground from '../assets/7d38720a420ed43210124dfa9269c105a39ad5c3.png';
 
 export function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -35,8 +35,10 @@ export function HeroSection() {
       <div className="absolute inset-0">
         <img 
           src={heroBackground}
-          alt=""
+          alt="Hambúrguer artesanal Rapa Nui com ingredientes frescos"
           className="w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
         />
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
@@ -48,17 +50,16 @@ export function HeroSection() {
         {/* Left Side - Text Content */}
         <div className="max-w-2xl space-y-8">
           <div ref={titleRef} className="space-y-2">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-white leading-none drop-shadow-2xl">
-              <span className="block">Burger</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none drop-shadow-2xl tracking-tighter">
+              <span className="block text-4xl lg:text-5xl mb-2">O Melhor Hambúrguer</span>
               <span className="block bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 bg-clip-text text-transparent">
                 Rapa Nui
               </span>
             </h1>
           </div>
 
-          <p className="text-lg md:text-xl text-white/90 max-w-md leading-relaxed drop-shadow-lg">
-            A melhor experiência em hambúrgueres artesanais, pizzas e pastéis. 
-            Ingredientes frescos e sabor incomparável desde 1998.
+          <p className="text-lg md:text-xl text-white/90 max-w-xl leading-relaxed drop-shadow-lg font-medium">
+            Desde 1998, entregamos a verdadeira experiência em lanches de qualidade. Pães frescos, blends suculentos e pastéis impecáveis. Venha conhecer ou peça agora!
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

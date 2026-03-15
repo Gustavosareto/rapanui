@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-import rapaNuiLogo from '../../assets/4f21ce56bc8447e0b15e74f64a95ca262c3e3b79.png';
+import rapaNuiLogo from '../assets/4f21ce56bc8447e0b15e74f64a95ca262c3e3b79.png';
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -95,6 +95,8 @@ export function Navigation() {
                   filter: 'drop-shadow(0 0 20px rgba(251, 146, 60, 0.3))'
                 }}
                 draggable={false}
+                fetchPriority="high"
+                loading="eager"
               />
             </button>
 
