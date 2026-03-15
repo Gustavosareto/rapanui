@@ -2,13 +2,34 @@ import { useState } from 'react';
 import { MenuCard } from '../components/MenuCard';
 import { menuItems, MenuItem } from '../data/menuData';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
-import { Pizza, Cake, UtensilsCrossed, Coffee, Search, ArrowLeft, MessageCircle, Bike } from 'lucide-react';
+import { Pizza, UtensilsCrossed, Coffee, Search, ArrowLeft, MessageCircle, Bike, LucideProps } from 'lucide-react';
 import { Link } from 'react-router';
 import { PageTransition } from '../components/PageTransition';
 
+const PastelIcon = (props: LucideProps) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M2 13c0 5 4 9 9 9h9a1 1 0 0 0 1-1v-2c0-5-4-9-9-9H3a1 1 0 0 0-1 1v2z" />
+    <path d="M6 13v2" />
+    <path d="M10 13v4" />
+    <path d="M14 13v6" />
+    <path d="M18 13v6" />
+  </svg>
+);
+
 export function MenuPage() {
-  const [activeCategory, setActiveCategory] = useState<string>('hamburgers');
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [activeCategory, setActiveCategory] = useState('hamburgers');
+  const [searchTerm, setSearchTerm] = useState('');
 
   const getFilteredItems = (category: string): MenuItem[] => {
     let filtered = menuItems.filter(item => item.category === category);
@@ -26,7 +47,7 @@ export function MenuPage() {
 
   const categories = [
     { id: 'hamburgers', label: 'Hambúrgueres', icon: UtensilsCrossed },
-    { id: 'pastries', label: 'Pastéis', icon: Cake },
+    { id: 'pastries', label: 'Pastéis', icon: PastelIcon },
     { id: 'pizza', label: 'Pizza 🚀', icon: Pizza },
     { id: 'drinks', label: 'Bebidas', icon: Coffee },
   ];
@@ -108,7 +129,7 @@ export function MenuPage() {
                 type="text"
                 placeholder="Buscar por nome ou ingrediente..."
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={(e: any) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] border border-white/10 rounded-full text-white placeholder-gray-500 focus:outline-none focus:border-orange-500/50 focus:ring-2 focus:ring-orange-500/20 transition-all duration-300"
               />
               {searchTerm && (
@@ -146,7 +167,6 @@ export function MenuPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                   {getFilteredItems(category.id).map((item, index) => (
                     <MenuCard
-                      key={item.id}
                       name={item.name}
                       price={item.price}
                       ingredients={item.ingredients}

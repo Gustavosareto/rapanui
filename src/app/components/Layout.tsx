@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router';
 import { Navigation } from './Navigation';
 import { FloatingWhatsApp } from './FloatingWhatsApp';
-import footerBackground from '../../assets/cbd03d3cee2c6ea111e91d8fcacd88294b895543.png';
+import footerBackground from '../assets/final.png';
 
 export function Layout() {
   return (

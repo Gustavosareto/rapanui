@@ -5,12 +5,12 @@ import { AnnouncementBanner } from '../components/AnnouncementBanner';
 import { ReviewsSection } from '../components/ReviewsSection';
 import { PageTransition } from '../components/PageTransition';
 
-import galleryBurger from '../../assets/bfb90da3e8e047e221a82cff43de07f3c5c66a2e.png';
-import galleryPastel from '../../assets/4a56b1827a7354bfafa389c7c86162afa469d634.png';
-import galleryBeverage from '../../assets/a14e25d72f2753a6e35725b8d531c23b0a3bfab8.png';
-import galleryBurgerPlate from '../../assets/49f7a80834c02a10613b597209efd0a82b59c370.png';
-import galleryInterior1 from '../../assets/9f51012b0f31fcf402463718fc51527d8a543e45.png';
-import galleryInterior2 from '../../assets/9c084d118d96a2e42e16b4aaf4c96d42fc72d980.png';
+import galleryComida1 from '../assets/comida.webp';
+import galleryComida2 from '../assets/comida2.webp';
+import galleryComida3 from '../assets/comida3.webp';
+import galleryComida4 from '../assets/comida4.webp';
+import galleryComida5 from '../assets/comida5.webp';
+import galleryComida6 from '../assets/comida6.webp';
 
 export function Home() {
   return (
@@ -48,48 +48,48 @@ export function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
-                src={galleryBurger}
-                alt="Gourmet Burger"
+                src={galleryComida1}
+                alt="Comida Rapa Nui 1"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
-                src={galleryPastel}
-                alt="Fresh Pastries"
+                src={galleryComida2}
+                alt="Comida Rapa Nui 2"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
-                src={galleryBurgerPlate}
-                alt="Hamburger com Batatas"
+                src={galleryComida3}
+                alt="Comida Rapa Nui 3"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
-                src={galleryBeverage}
-                alt="Tropical Drinks"
+                src={galleryComida4}
+                alt="Comida Rapa Nui 4"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
-                src={galleryInterior1}
-                alt="Restaurant Interior"
+                src={galleryComida5}
+                alt="Comida Rapa Nui 5"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
-                src={galleryInterior2}
-                alt="Food Preparation"
+                src={galleryComida6}
+                alt="Comida Rapa Nui 6"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
@@ -103,7 +103,7 @@ export function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3">
-              Visite <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Nos</span>
+              Visite - <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Nos</span>
             </h2>
             <p className="text-base md:text-lg text-gray-400">
               Venha aproveitar nosso delicioso cardápio pessoalmente!

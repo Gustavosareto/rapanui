@@ -125,12 +125,12 @@ export function AmbientSection() {
               Em Rapa Nui criamos mais do que um lanche
               bar - construímos um centro comunitário onde amigos
               se reúnem, as famílias comemoram e lembranças deliciosas
-              são feitos.
+              são feitas.
             </p>
             <p className="text-lg md:text-xl text-gray-400 mb-8 leading-relaxed">
-              Desde os nossos pastéis acabados de fazer pela manhã até
-              nossas pizzas artesanais à noite, todos os itens da nossa
-              o menu é elaborado com cuidado e servido com um sorriso.
+              Desde os nossos pastéis crocantes, hambúrgueres suculentos e
+              nossas pizzas artesanais, todos os itens do nosso
+              menu é elaborado com cuidado e servido com um sorriso.
             </p>
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-3">

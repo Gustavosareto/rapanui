@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { Badge } from './ui/badge';
 
 interface MenuCardProps {
+  key?: string | number;
   name: string;
   price: string;
   ingredients: string;

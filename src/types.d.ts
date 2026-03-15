@@ -1,5 +1,6 @@
 declare module "react" {
   export const useEffect: any;
+  export const useState: any;
   export function useRef<T>(initialValue: T | null): { current: T | null };
 }
 
@@ -19,6 +20,11 @@ declare module "gsap/ScrollTrigger" {
 }
 
 declare module '*.png' {
+  const src: string;
+  export default src;
+}
+
+declare module '*.webp' {
   const src: string;
   export default src;
 }
