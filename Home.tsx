@@ -3,6 +3,7 @@ import { FeaturedSection } from '../components/FeaturedSection';
 import { AmbientSection } from '../components/AmbientSection';
 import { AnnouncementBanner } from '../components/AnnouncementBanner';
 import { ReviewsSection } from '../components/ReviewsSection';
+import { FAQSection } from '../components/FAQSection';
 import { PageTransition } from '../components/PageTransition';
 
 import galleryComida1 from '../../assets/comida.webp';
@@ -49,48 +50,54 @@ export function Home() {
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
                 src={galleryComida1}
-                alt="Comida Rapa Nui 1"
+                alt="Hambúrguer artesanal Rapa Nui em Balneário Camboriú"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
                 src={galleryComida2}
-                alt="Comida Rapa Nui 2"
+                alt="Pizza tradicional fresca Rapa Nui em Balneário Camboriú"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
                 src={galleryComida3}
-                alt="Comida Rapa Nui 3"
+                alt="Porção e lanches servidos na Rapa Nui, melhor lanchonete"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
                 src={galleryComida4}
-                alt="Comida Rapa Nui 4"
+                alt="Pastel frito na hora com ingredientes frescos e crocante"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
                 src={galleryComida5}
-                alt="Comida Rapa Nui 5"
+                alt="Hambúrguer gourmet com queijo derretido e pão tostado Rapa Nui"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
             <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden group shadow-lg shadow-black/50 hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 border border-white/10">
               <img
                 src={galleryComida6}
-                alt="Comida Rapa Nui 6"
+                alt="Detalhes dos lanches artesanais da lanchonete Rapa Nui em BC"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </div>
@@ -103,7 +110,7 @@ export function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-3">
-              Visite - <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">Nos</span>
+              Visite - <span className="bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">nos</span>
             </h2>
             <p className="text-base md:text-lg text-gray-400">
               Venha aproveitar nosso delicioso cardápio pessoalmente!
@@ -174,6 +181,9 @@ export function Home() {
 
       {/* Reviews Section */}
       <ReviewsSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
     </PageTransition>
   );
 }
