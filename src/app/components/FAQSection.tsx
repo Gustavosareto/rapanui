@@ -11,7 +11,7 @@ const faqData = [
     answer: "Estamos abertos de segunda a domingo, das 18:00 às 00:00."
   },
   {
-    question: "Cês fazem entregas na minha região?",
+    question: "Fazem entregas na minha região?",
     answer: "Sim! Fazemos delivery em um raio de 30 km. Acesse a página do nosso cardápio, faça seu pedido e entregamos quentinho na sua casa."
   },
   {

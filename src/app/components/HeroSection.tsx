@@ -98,7 +98,7 @@ export function HeroSection() {
           {/* WhatsApp CTA */}
           <div className="pt-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <a
-              href="https://wa.me/5547336622373?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20🍔"
+              href="https://wa.me/5547997078484?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20🍔"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold rounded-full transition-colors duration-300 shadow-lg shadow-[#25D366]/20 hover:shadow-xl hover:shadow-[#25D366]/30"
