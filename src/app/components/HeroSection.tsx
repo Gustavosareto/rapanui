@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import gsap from 'gsap';
 import { ChevronRight, MessageCircle, Bike } from 'lucide-react';
-import heroBackground from '../assets/7d38720a420ed43210124dfa9269c105a39ad5c3.png';
+import heroBackground from '../../assets/7d38720a420ed43210124dfa9269c105a39ad5c3.png';
 
 export function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
